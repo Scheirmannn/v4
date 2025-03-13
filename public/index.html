@@ -1,46 +1,52 @@
+
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+    <title>Art Class</title>
 
-<head>
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
-  <title>Spanish Dictionary</title>
+    <link rel="stylesheet" href="./css/master.css" />
 
-  <link rel="stylesheet" href="./css/master.css" />
-  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-  <script src="/uv/uv.config.js"></script>
-  <script src="./js/preload.js"></script>
+    <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="./js/preload.js"></script>
 
-  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
-</head>
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+  </head>
 
-<body theme="main">
-  <nav>
-    <div class="logo">
-      <h1>Spanish Dictionary</h1>
+  <body theme="main">
+    <nav>
+      <div class="logo">
+        <h1>Spanish Dictionary</h1>
+      </div>
+
+      <p id="time"></p>
+
+      <div class="navitems">
+        <div class="navitem"><a selected href="/">Home</a></div>
+        <div class="navitem"><a href="/search.html">Search</a></div>
+      </div>
+    </nav>
+
+    <div class="center-container">
+      <h1>Welcome to <span>The Pro Spanish Dictionary</span></h1>
+      <br />
     </div>
 
-    <p id="time"></p>
+    <div class="links">
 
-    <div class="navitems">
-      <div class="navitem"><a href="/index.html">Home</a></div>
-      <div class="navitem"><a selected href="/search.html">Search</a></div>
+      <div class="left">
+        <a href="./settings.html">Settings</a>
+  
+      </div>
     </div>
-  </nav>
+  </body>
 
-  <div class="center-container">
-    <h1>Search</h1>
-    <input class="pxyinput" type="text" placeholder="Search for any spanish word..." />
-  </div>
-  <iframe class="frame"></iframe>
-</body>
+  <script src="./js/index.js"></script>
 
-<script src="./js/index.js"></script>
-<script src="./js/search.js"></script>
-
-<script type="text/javascript">
+  <script type="text/javascript" async>
     aclib.runAutoTag({
         zoneId: '6hmeyutild',
-    });
-</script>
-
+    })
+  </script>
 </html>
